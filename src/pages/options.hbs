@@ -1,0 +1,26 @@
+{{#> layouts/base}}
+
+{{#*inline "content"}}
+  <h1>Options</h1>
+  <p>No two projects are the same. That is why bxSlider is packed full of options that allow the slider to adapt to the project’s specific needs. Check the examples page for detailed implementations.</p>
+
+  {{#each settings.options}}
+
+    <h2>{{group}}</h2>
+    
+    {{#each items}}
+      <div class="option">
+        <div class="option__name">{{name}}</div>
+        <div class="option__description">{{description}}</div>
+        <div class="option__code">
+          <div class="option__code-item">default: {{default}}</div>
+          <div class="option__code-item">options: {{options}}</div>
+        </div>
+      </div>
+    {{/each}}
+
+  {{/each}}
+
+{{/inline}}
+
+{{/layouts/base}}

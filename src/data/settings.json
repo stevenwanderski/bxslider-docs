@@ -1,0 +1,21 @@
+{
+  "options": [
+    {
+      "group": "General",
+      "items": [
+        {
+          "name": "mode",
+          "description": "Type of transition between slides",
+          "default": "horizontal",
+          "options": "'horizontal', 'vertical', 'fade'"
+        },
+        {
+          "name": "speed",
+          "description": "Slide transition duration (in ms)",
+          "default": 500,
+          "options": "integer"
+        }        
+      ]
+    }
+  ]
+}

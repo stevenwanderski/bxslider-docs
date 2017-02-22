@@ -1,0 +1,44 @@
+---
+html: |
+  <ul class="bxslider">
+    <li><img src="/images/unsplash.jpg" title="Funky roots" /></li>
+    <li><img src="/images/unsplash-1.jpg" title="The long and winding road" /></li>
+    <li><img src="/images/unsplash-2.jpg" title="Happy trees" /></li>
+  </ul>
+
+js: |
+  $(function(){
+    $('.bxslider').bxSlider({
+      mode: 'fade',
+      captions: true
+    });
+  });
+---
+
+{{#> layouts/base}}
+
+{{#*inline "content"}}
+
+<h1>Image gallery with captions</h1>
+
+<div class="example__slider">
+  {{{page.html}}}
+</div>
+
+<script>
+  {{{page.js}}}
+</script>
+
+<div class="example__code-block">
+  <div class="example__code-header">JS:</div>
+  <pre class="example__code-body">{{page.js}}</pre>
+</div>
+
+<div class="example__code-block">
+  <div class="example__code-header">HTML:</div>
+  <pre class="example__code-body">{{page.html}}</pre>
+</div>
+
+{{/inline}}
+
+{{/layouts/base}}
