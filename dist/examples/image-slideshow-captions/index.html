@@ -6,6 +6,7 @@
   <meta name="keywords" content="content slider, responsive image gallery, responsive image gallery, image slider, image fade, image rotator" />
   <meta name="description" content="Respsonsive jQuery content slider." />
 
+  <link rel="stylesheet" href="/assets/css/app.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.7/jquery.bxslider.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -22,14 +23,15 @@
     </nav>
   </header>
 
+  <main>
   
 <h1>Image gallery with captions</h1>
 
 <div class="example__slider">
   <ul class="bxslider">
-  <li><img src="/images/unsplash.jpg" title="Funky roots" /></li>
-  <li><img src="/images/unsplash-1.jpg" title="The long and winding road" /></li>
-  <li><img src="/images/unsplash-2.jpg" title="Happy trees" /></li>
+  <li><img src="/assets/images/unsplash.jpg" title="Funky roots" /></li>
+  <li><img src="/assets/images/unsplash-1.jpg" title="The long and winding road" /></li>
+  <li><img src="/assets/images/unsplash-2.jpg" title="Happy trees" /></li>
 </ul>
 
 </div>
@@ -38,7 +40,8 @@
   $(function(){
   $('.bxslider').bxSlider({
     mode: 'fade',
-    captions: true
+    captions: true,
+    slideWidth: 400
   });
 });
 
@@ -49,7 +52,8 @@
   <pre class="example__code-body">$(function(){
   $(&#x27;.bxslider&#x27;).bxSlider({
     mode: &#x27;fade&#x27;,
-    captions: true
+    captions: true,
+    slideWidth: 400
   });
 });
 </pre>
@@ -58,15 +62,15 @@
 <div class="example__code-block">
   <div class="example__code-header">HTML:</div>
   <pre class="example__code-body">&lt;ul class&#x3D;&quot;bxslider&quot;&gt;
-  &lt;li&gt;&lt;img src&#x3D;&quot;/images/unsplash.jpg&quot; title&#x3D;&quot;Funky roots&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;img src&#x3D;&quot;/images/unsplash-1.jpg&quot; title&#x3D;&quot;The long and winding road&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;img src&#x3D;&quot;/images/unsplash-2.jpg&quot; title&#x3D;&quot;Happy trees&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src&#x3D;&quot;/assets/images/unsplash.jpg&quot; title&#x3D;&quot;Funky roots&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src&#x3D;&quot;/assets/images/unsplash-1.jpg&quot; title&#x3D;&quot;The long and winding road&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src&#x3D;&quot;/assets/images/unsplash-2.jpg&quot; title&#x3D;&quot;Happy trees&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
 </div>
 
 
+  </main>
 
-  <footer>I am footer.</footer>
 </body>
 </html>

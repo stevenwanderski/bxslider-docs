@@ -1,0 +1,32 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  font-family: 'Monaco';
+}
+
+main {
+	padding: 20px;
+}
+
+h1 {
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+
+a {
+	color: $blue;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+pre {
+	font-size: 16px;
+	background: $light-gray;
+	padding: 10px;
+}

@@ -1,0 +1,33 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Monaco'; }
+
+main {
+  padding: 20px; }
+
+h1 {
+  font-weight: normal;
+  margin-bottom: 40px; }
+
+a {
+  color: #5280dd;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+pre {
+  font-size: 16px;
+  background: #f9f9f9;
+  padding: 10px; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 20px; }
+
+.footer {
+  padding: 20px; }

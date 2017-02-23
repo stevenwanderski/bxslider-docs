@@ -5,6 +5,7 @@
   <meta name="keywords" content="content slider, responsive image gallery, responsive image gallery, image slider, image fade, image rotator" />
   <meta name="description" content="Respsonsive jQuery content slider." />
 
+  <link rel="stylesheet" href="/assets/css/app.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.7/jquery.bxslider.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -13,8 +14,10 @@
 <body>
   {{> partials/header}}
 
+  <main>
   {{#> content}}{{/content}}
+  </main>
 
-  {{> partials/footer}}
+  {{!-- {{> partials/footer}} --}}
 </body>
 </html>

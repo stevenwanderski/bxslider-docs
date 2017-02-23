@@ -1,16 +1,17 @@
 ---
 html: |
   <ul class="bxslider">
-    <li><img src="/images/unsplash.jpg" title="Funky roots" /></li>
-    <li><img src="/images/unsplash-1.jpg" title="The long and winding road" /></li>
-    <li><img src="/images/unsplash-2.jpg" title="Happy trees" /></li>
+    <li><img src="/assets/images/unsplash.jpg" title="Funky roots" /></li>
+    <li><img src="/assets/images/unsplash-1.jpg" title="The long and winding road" /></li>
+    <li><img src="/assets/images/unsplash-2.jpg" title="Happy trees" /></li>
   </ul>
 
 js: |
   $(function(){
     $('.bxslider').bxSlider({
       mode: 'fade',
-      captions: true
+      captions: true,
+      slideWidth: 400
     });
   });
 ---
