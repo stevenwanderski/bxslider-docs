@@ -3,35 +3,44 @@
 <head>
   <title>jQuery Content Slider | Responsive jQuery Slider | bxSlider</title>
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="keywords" content="content slider, responsive image gallery, responsive image gallery, image slider, image fade, image rotator" />
-  <meta name="description" content="Respsonsive jQuery content slider." />
+  <meta name="keywords" content="content slider, responsive image gallery, responsive image gallery, image slider, image fade, image rotator">
+  <meta name="description" content="Respsonsive jQuery content slider.">
 
+  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.9.0/styles/github-gist.min.css">
   <link rel="stylesheet" href="/assets/css/app.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.7/jquery.bxslider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.8/jquery.bxslider.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.7/jquery.bxslider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.8/jquery.bxslider.min.js"></script>
 </head>
 <body>
   <header class="header">
-    <div class="header__logo">bxSlider</div>
-    <nav>
-      <a href="/" class="active">Home</a>
-      <a href="/examples">Examples</a>
-      <a href="/options">Options</a>
-      <a href="/faqs">FAQs</a>
-    </nav>
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="/">
+          <strong>bx</strong>Slider
+        </a>
+      </div>
+      <nav class="nav">
+        <a href="/examples" class="nav__link">Examples</a>
+        <a href="/options" class="nav__link">Options</a>
+        <a href="/" class="nav__link">Github</a>
+        <a href="/" class="nav__button button">Download</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-  
+    <div class="content">
+      
 <h1>Image gallery with captions</h1>
 
 <div class="example__slider">
   <ul class="bxslider">
-  <li><img src="/assets/images/unsplash.jpg" title="Funky roots" /></li>
-  <li><img src="/assets/images/unsplash-1.jpg" title="The long and winding road" /></li>
-  <li><img src="/assets/images/unsplash-2.jpg" title="Happy trees" /></li>
+  <li><img src="/assets/images/unsplash.jpg" title="Funky roots"></li>
+  <li><img src="/assets/images/unsplash-1.jpg" title="The long and winding road"></li>
+  <li><img src="/assets/images/unsplash-2.jpg" title="Happy trees"></li>
 </ul>
 
 </div>
@@ -49,28 +58,41 @@
 
 <div class="example__code-block">
   <div class="example__code-header">JS:</div>
-  <pre class="example__code-body">$(function(){
-  $(&#x27;.bxslider&#x27;).bxSlider({
-    mode: &#x27;fade&#x27;,
-    captions: true,
-    slideWidth: 400
+  <pre class="example__code-body"><code class="javascript hljs">$(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  $(<span class="hljs-string">'.bxslider'</span>).bxSlider({
+    <span class="hljs-attr">mode</span>: <span class="hljs-string">'fade'</span>,
+    <span class="hljs-attr">captions</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">slideWidth</span>: <span class="hljs-number">400</span>
   });
 });
-</pre>
+</code></pre>
 </div>
 
 <div class="example__code-block">
   <div class="example__code-header">HTML:</div>
-  <pre class="example__code-body">&lt;ul class&#x3D;&quot;bxslider&quot;&gt;
-  &lt;li&gt;&lt;img src&#x3D;&quot;/assets/images/unsplash.jpg&quot; title&#x3D;&quot;Funky roots&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;img src&#x3D;&quot;/assets/images/unsplash-1.jpg&quot; title&#x3D;&quot;The long and winding road&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;img src&#x3D;&quot;/assets/images/unsplash-2.jpg&quot; title&#x3D;&quot;Happy trees&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</pre>
+  <pre class="example__code-body"><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bxslider"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/assets/images/unsplash.jpg"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Funky roots"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/assets/images/unsplash-1.jpg"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"The long and winding road"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/assets/images/unsplash-2.jpg"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Happy trees"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
 </div>
 
 
+    </div>
+
+    <aside class="sidebar">
+      <div class="sidebar__block">
+        <div class="ad"></div>
+      </div>
+
+      <div class="sidebar__block">
+        <a href="https://paypal.com" class="button button--inverse button--full-width">
+          Donate
+        </a>
+      </div>
+    </aside>
   </main>
 
 </body>
-</html>
+

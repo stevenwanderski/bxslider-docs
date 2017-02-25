@@ -1,6 +1,26 @@
 .header {
-  display: flex;
-  justify-content: space-between;
   background: $light-gray;
-  padding: 20px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 14px 20px;
+  }
+
+  &__logo {
+    font-weight: 600;
+    font-size: 20px;
+
+    a {
+      color: $gray;
+    }
+
+    strong {
+      color: $primary;
+      font-weight: 600;
+    }
+  }
 }

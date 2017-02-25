@@ -5,17 +5,33 @@
   <meta name="keywords" content="content slider, responsive image gallery, responsive image gallery, image slider, image fade, image rotator" />
   <meta name="description" content="Respsonsive jQuery content slider." />
 
+  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.9.0/styles/github-gist.min.css">
   <link rel="stylesheet" href="/assets/css/app.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.7/jquery.bxslider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.8/jquery.bxslider.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.7/jquery.bxslider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.8/jquery.bxslider.min.js"></script>
 </head>
 <body>
   {{> partials/header}}
 
   <main>
-  {{#> content}}{{/content}}
+    <div class="content">
+      {{#> content}}{{/content}}
+    </div>
+
+    <aside class="sidebar">
+      <div class="sidebar__block">
+        <div class="ad"></div>
+      </div>
+
+      <div class="sidebar__block">
+        <a href="https://paypal.com" class="button button--inverse button--full-width">
+          Donate
+        </a>
+      </div>
+    </aside>
   </main>
 
   {{!-- {{> partials/footer}} --}}

@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  padding: 10px 25px;
+  background: $primary;
+  color: $white;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  &--inverse {
+    background: $white;
+    color: $primary;
+    border: solid 2px $primary;
+  }
+
+  &--full-width {
+    width: 100%;
+    text-align: center;
+  }
+}

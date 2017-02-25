@@ -2,28 +2,37 @@
 <head>
   <title>jQuery Content Slider | Responsive jQuery Slider | bxSlider</title>
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="keywords" content="content slider, responsive image gallery, responsive image gallery, image slider, image fade, image rotator" />
-  <meta name="description" content="Respsonsive jQuery content slider." />
+  <meta name="keywords" content="content slider, responsive image gallery, responsive image gallery, image slider, image fade, image rotator">
+  <meta name="description" content="Respsonsive jQuery content slider.">
 
+  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.9.0/styles/github-gist.min.css">
   <link rel="stylesheet" href="/assets/css/app.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.7/jquery.bxslider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.8/jquery.bxslider.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.7/jquery.bxslider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.8/jquery.bxslider.min.js"></script>
 </head>
 <body>
   <header class="header">
-    <div class="header__logo">bxSlider</div>
-    <nav>
-      <a href="/" class="active">Home</a>
-      <a href="/examples">Examples</a>
-      <a href="/options">Options</a>
-      <a href="/faqs">FAQs</a>
-    </nav>
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="/">
+          <strong>bx</strong>Slider
+        </a>
+      </div>
+      <nav class="nav">
+        <a href="/examples" class="nav__link">Examples</a>
+        <a href="/options" class="nav__link">Options</a>
+        <a href="/" class="nav__link">Github</a>
+        <a href="/" class="nav__button button">Download</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <h1>Options</h1>
+    <div class="content">
+        <h1>Options</h1>
   <p>No two projects are the same. That is why bxSlider is packed full of options that allow the slider to adapt to the project’s specific needs. Check the examples page for detailed implementations.</p>
 
 
@@ -48,7 +57,20 @@
 
 
 
+    </div>
+
+    <aside class="sidebar">
+      <div class="sidebar__block">
+        <div class="ad"></div>
+      </div>
+
+      <div class="sidebar__block">
+        <a href="https://paypal.com" class="button button--inverse button--full-width">
+          Donate
+        </a>
+      </div>
+    </aside>
   </main>
 
 </body>
-</html>
+

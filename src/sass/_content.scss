@@ -1,0 +1,7 @@
+.content {
+  margin-right: 60px;
+  
+  // Required so that `pre` elements do not force
+  // flex layouts to overflow outside of the parent.
+  min-width: 0;
+}
