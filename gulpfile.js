@@ -47,9 +47,10 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./src/{data,layouts,pages,partials}/**/*', ['compile-templates']).on('change', browserSync.reload);
+  gulp.watch('./src/{data,layouts,pages,partials}/**/*', ['compile-templates']);
   gulp.watch('./src/images/*', ['images']);
   gulp.watch('./src/sass/**/*', ['sass']);
+  gulp.watch('./dist/**/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['watch', 'compile-templates', 'images', 'sass', 'browser-sync']);

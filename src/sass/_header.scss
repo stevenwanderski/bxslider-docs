@@ -8,14 +8,26 @@
     max-width: $max-width;
     margin: 0 auto;
     padding: 14px 20px;
+
+    @media (max-width: $break-main) {
+      display: block;
+    }
   }
 
   &__logo {
     font-weight: 600;
-    font-size: 20px;
+
+    @media (max-width: $break-main) {
+      margin-bottom: 10px;
+    }
 
     a {
+      font-size: 20px;
       color: $gray;
+
+      @media (max-width: $break-main) {
+        font-size: 30px;
+      }
     }
 
     strong {

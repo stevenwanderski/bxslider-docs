@@ -7,14 +7,13 @@
           "name": "mode",
           "description": "Type of transition between slides",
           "default": "horizontal",
-          "options": "'horizontal', 'vertical', 'fade'"
+          "options": "horizontal, vertical, fade"
         },
         {
           "name": "speed",
           "description": "Slide transition duration (in ms)",
-          "default": 500,
-          "options": "integer"
-        }        
+          "default": 500
+        }
       ]
     }
   ]
