@@ -175,7 +175,8 @@ th {
 td {
   border: solid 1px #e0e0e0;
   padding: 14px;
-  font-size: 14px; }
+  font-size: 14px;
+  vertical-align: top; }
 
 .personal {
   font-size: 14px;

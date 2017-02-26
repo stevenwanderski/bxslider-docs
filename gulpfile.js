@@ -17,9 +17,13 @@ gulp.task('compile-templates', function() {
       data: './src/data/settings.json'
     }))
     .pipe(highlight())
-    .pipe(rename({
-      suffix: '/index',
-      extname: '.html'
+    .pipe(rename(function (path) {
+      if (path.basename === 'home') {
+        path.basename = 'index';
+      } else {
+        path.basename += '/index';
+      }
+      path.extname = '.html';
     }))
     .pipe(gulp.dest('./dist'));
 });
