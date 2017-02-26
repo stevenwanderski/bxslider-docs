@@ -1,4 +1,9 @@
 .option {
+  &__body {
+    display: none;
+    margin-bottom: 60px;
+  }
+
   &__name {
     font-weight: bold;
   }
@@ -10,8 +15,13 @@
   &__argument {
     margin-bottom: 10px;
   }
-}
 
-.option-group {
-  margin-bottom: 60px;
+  &__control {
+    color: $primary;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

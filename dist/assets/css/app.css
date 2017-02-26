@@ -53,7 +53,7 @@ code {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 14px 20px; }
+    padding: 20px; }
     @media (max-width: 800px) {
       .header__inner {
         display: block; } }
@@ -147,6 +147,10 @@ code {
   font-weight: bold;
   margin-bottom: 8px; }
 
+.option__body {
+  display: none;
+  margin-bottom: 60px; }
+
 .option__name {
   font-weight: bold; }
 
@@ -156,8 +160,11 @@ code {
 .option__argument {
   margin-bottom: 10px; }
 
-.option-group {
-  margin-bottom: 60px; }
+.option__control {
+  color: #FF1654;
+  cursor: pointer; }
+  .option__control:hover {
+    text-decoration: underline; }
 
 .sidebar {
   flex: 0 0 300px; }
