@@ -13,7 +13,7 @@ main {
   display: flex;
   justify-content: space-between;
   max-width: $max-width;
-  margin: 0 auto;
+  margin: 0 auto 60px;
 
   @media (max-width: $break-main) {
     display: block;

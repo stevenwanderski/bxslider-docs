@@ -5,29 +5,31 @@
 
   {{#each settings.options}}
 
-    <h2>{{group}}</h2>
+    <div class="option-group">
+      <h2>{{group}}</h2>
 
-    <table cellspacing=0 cellpadding=0>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each items}}
+      <table cellspacing=0 cellpadding=0>
+        <thead>
           <tr>
-            <td>
-              <div class="option__name">{{name}}</div>
-              <div class="option__options">{{options}}</div>
-            </td>
-            <td>{{description}}</td>
-            <td>{{default}}</td>
+            <th>Name</th>
+            <th>Default</th>
+            <th>Description</th>
           </tr>
-        {{/each}}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {{#each items}}
+            <tr>
+              <td>
+                <div class="option__name">{{name}}</div>
+                <div class="option__options">{{options}}</div>
+              </td>
+              <td>{{default}}</td>
+              <td>{{{description}}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
 
   {{/each}}
 

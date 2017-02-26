@@ -3,13 +3,17 @@ table {
   border-collapse: collapse;
 }
 
+tbody tr:nth-child(odd) {
+  background: $light-gray;
+}
+
 th {
   padding: 10px;
   text-align: left;
 }
 
 td {
-  border: solid 1px $light-gray;
+  border: solid 1px darken($light-gray, 10);
   padding: 14px;
   font-size: 14px;
 }

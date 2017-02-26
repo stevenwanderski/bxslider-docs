@@ -37,35 +37,383 @@
         <h1>Options</h1>
 
 
-    <h2>General</h2>
+    <div class="option-group">
+      <h2>General</h2>
 
-    <table cellspacing="0" cellpadding="0">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Description</th>
-          <th>Default</th>
-        </tr>
-      </thead>
-      <tbody>
+      <table cellspacing="0" cellpadding="0">
+        <thead>
           <tr>
-            <td>
-              <div class="option__name">mode</div>
-              <div class="option__options">horizontal, vertical, fade</div>
-            </td>
-            <td>Type of transition between slides</td>
-            <td>horizontal</td>
+            <th>Name</th>
+            <th>Default</th>
+            <th>Description</th>
           </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>
+                <div class="option__name">mode</div>
+                <div class="option__options">&#x27;horizontal&#x27;, &#x27;vertical&#x27;, &#x27;fade&#x27;</div>
+              </td>
+              <td>&#x27;horizontal&#x27;</td>
+              <td>Type of transition between slides</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">speed</div>
+                <div class="option__options">integer</div>
+              </td>
+              <td>500</td>
+              <td>Slide transition duration (in ms)</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">slideMargin</div>
+                <div class="option__options">integer</div>
+              </td>
+              <td>0</td>
+              <td>Margin between each slide</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">startSlide</div>
+                <div class="option__options">integer</div>
+              </td>
+              <td>0</td>
+              <td>Starting slide index (zero-based)</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">randomStart</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>false</td>
+              <td>Start slider on a random slide</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">slideSelector</div>
+                <div class="option__options">jQuery selector</div>
+              </td>
+              <td>&#x27;&#x27;</td>
+              <td>Element to use as slides (ex. 'div.slide').<br>Note: by default, bxSlider will use all immediate children of the slider element</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">infiniteLoop</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>true</td>
+              <td>If true, clicking "Next" while on the last slide will transition to the first slide and vice-versa</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">hideControlOnEnd</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>false</td>
+              <td>If true, "Prev" and "Next" controls will receive a class disabled when slide is the first or the last<br>Note: Only used when infiniteLoop: false</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">easing</div>
+                <div class="option__options">if using CSS: &#x27;linear&#x27;, &#x27;ease&#x27;, &#x27;ease-in&#x27;, &#x27;ease-out&#x27;, &#x27;ease-in-out&#x27;, &#x27;cubic-bezier(n,n,n,n)&#x27;. If not using CSS: &#x27;swing&#x27;, &#x27;linear&#x27; (see the above file for more options)</div>
+              </td>
+              <td>null</td>
+              <td>The type of "easing" to use during transitions. If using CSS transitions, include a value for the transition-timing-function property. If not using CSS transitions, you may include plugins/jquery.easing.1.3.js for many options.<br>See <a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">http://gsgd.co.uk/sandbox/jquery/easing/</a> for more info.</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">captions</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>false</td>
+              <td>Include image captions. Captions are derived from the image's title attribute</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">ticker</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>false</td>
+              <td>Use slider in ticker mode (similar to a news ticker)</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">tickerHover</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>false</td>
+              <td>Ticker will pause when mouse hovers over slider. Note: this functionality does NOT work if using CSS transitions!</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">adaptiveHeight</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>false</td>
+              <td>Dynamically adjust slider height based on each slide's height</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">adaptiveHeightSpeed</div>
+                <div class="option__options">integer</div>
+              </td>
+              <td>500</td>
+              <td>Slide height transition duration (in ms). Note: only used if adaptiveHeight: true</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">video</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>false</td>
+              <td>If any slides contain video, set this to true. Also, include plugins/jquery.fitvids.js<br>See <a href="http://fitvidsjs.com/" target="_blank">http://fitvidsjs.com/</a> for more info</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">responsive</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>true</td>
+              <td>Enable or disable auto resize of the slider. Useful if you need to use fixed width sliders.</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">useCSS</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>true</td>
+              <td>If true, CSS transitions will be used for horizontal and vertical slide animations (this uses native hardware acceleration). If false, jQuery animate() will be used.</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">preloadImages</div>
+                <div class="option__options">&#x27;all&#x27;, &#x27;visible&#x27;</div>
+              </td>
+              <td>&#x27;visible&#x27;</td>
+              <td>If 'all', preloads all images before starting the slider. If 'visible', preloads only images in the initially visible slides before starting the slider (tip: use 'visible' if all slides are identical dimensions)</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">touchEnabled</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>true</td>
+              <td>If true, slider will allow touch swipe transitions</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">swipeThreshold</div>
+                <div class="option__options">integer</div>
+              </td>
+              <td>50</td>
+              <td>Amount of pixels a touch swipe needs to exceed in order to execute a slide transition. Note: only used if touchEnabled: true</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">oneToOneTouch</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>true</td>
+              <td>If true, non-fade slides follow the finger as it swipes</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">preventDefaultSwipeX</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>true</td>
+              <td>If true, touch screen will not move along the x-axis as the finger swipes</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">preventDefaultSwipeY</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>false</td>
+              <td>If true, touch screen will not move along the y-axis as the finger swipes</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">wrapperClass</div>
+                <div class="option__options">string</div>
+              </td>
+              <td>&#x27;bx-wrapper&#x27;</td>
+              <td>Class to wrap the slider in. Change to prevent from using default bxSlider styles.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="option-group">
+      <h2>Pager</h2>
+
+      <table cellspacing="0" cellpadding="0">
+        <thead>
           <tr>
-            <td>
-              <div class="option__name">speed</div>
-              <div class="option__options"></div>
-            </td>
-            <td>Slide transition duration (in ms)</td>
-            <td>500</td>
+            <th>Name</th>
+            <th>Default</th>
+            <th>Description</th>
           </tr>
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+            <tr>
+              <td>
+                <div class="option__name">pager</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>true</td>
+              <td>If true, a pager will be added</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">pagerType</div>
+                <div class="option__options">&#x27;full&#x27;, &#x27;short&#x27;</div>
+              </td>
+              <td>&#x27;full&#x27;</td>
+              <td>If 'full', a pager link will be generated for each slide. If 'short', a x / y pager will be used (ex. 1 / 5)</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">pagerShortSeparator</div>
+                <div class="option__options">string</div>
+              </td>
+              <td>&#x27; / &#x27;</td>
+              <td>If pagerType: 'short', pager will use this value as the separating character</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">pagerSelector</div>
+                <div class="option__options">jQuery selector</div>
+              </td>
+              <td>&#x27;&#x27;</td>
+              <td>Element used to populate the populate the pager. By default, the pager is appended to the bx-viewport</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">pagerCustom</div>
+                <div class="option__options">jQuery selector</div>
+              </td>
+              <td>null</td>
+              <td>Parent element to be used as the pager. Parent element must contain a <a data-slide-index="x"> element for each slide. See example <a href="/examples/thumbnail-method-1">here</a>. Not for use with dynamic carousels.</a></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">buildPager</div>
+                <div class="option__options">function(slideIndex)</div>
+              </td>
+              <td>null</td>
+              <td>If supplied, function is called on every slide element, and the returned value is used as the pager item markup.<br>See <a href="http://bxslider.com/examples">examples</a> for detailed implementation</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="option-group">
+      <h2>Controls</h2>
+
+      <table cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Default</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>
+                <div class="option__name">controls</div>
+                <div class="option__options">boolean (true / false)</div>
+              </td>
+              <td>true</td>
+              <td>If true, "Next" / "Prev" controls will be added</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">nextText</div>
+                <div class="option__options">string</div>
+              </td>
+              <td>&#x27;Next&#x27;</td>
+              <td>Text to be used for the "Next" control</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">prevText</div>
+                <div class="option__options">string</div>
+              </td>
+              <td>&#x27;Prev&#x27;</td>
+              <td>Text to be used for the "Prev" control</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">nextSelector</div>
+                <div class="option__options">jQuery selector</div>
+              </td>
+              <td>null</td>
+              <td>Element used to populate the "Next" control</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">prevSelector</div>
+                <div class="option__options">jQuery selector</div>
+              </td>
+              <td>null</td>
+              <td>Element used to populate the "Prev" control</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">autoControls</div>
+                <div class="option__options">boolean (true / false)</div>
+              </td>
+              <td>false</td>
+              <td>If true, "Start" / "Stop" controls will be added</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">startText</div>
+                <div class="option__options">string</div>
+              </td>
+              <td>&#x27;Start&#x27;</td>
+              <td>Text to be used for the "Start" control</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">stopText</div>
+                <div class="option__options">string</div>
+              </td>
+              <td>&#x27;Stop&#x27;</td>
+              <td>Text to be used for the "Stop" control</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">autoControlsCombine</div>
+                <div class="option__options">boolean (true / false)</div>
+              </td>
+              <td>false</td>
+              <td>When slideshow is playing only "Stop" control is displayed and vice-versa</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">autoControlsSelector</div>
+                <div class="option__options">jQuery selector</div>
+              </td>
+              <td>null</td>
+              <td>Element used to populate the auto controls</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">keyboardEnabled</div>
+                <div class="option__options">boolean (true / false)</div>
+              </td>
+              <td>false</td>
+              <td>Enable keyboard navigation for visible sliders</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
 
 
 
