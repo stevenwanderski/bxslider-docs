@@ -326,7 +326,7 @@
             <tr>
               <td>
                 <div class="option__name">controls</div>
-                <div class="option__options">boolean (true / false)</div>
+                <div class="option__options">boolean</div>
               </td>
               <td>true</td>
               <td>If true, "Next" / "Prev" controls will be added</td>
@@ -366,7 +366,7 @@
             <tr>
               <td>
                 <div class="option__name">autoControls</div>
-                <div class="option__options">boolean (true / false)</div>
+                <div class="option__options">boolean</div>
               </td>
               <td>false</td>
               <td>If true, "Start" / "Stop" controls will be added</td>
@@ -390,7 +390,7 @@
             <tr>
               <td>
                 <div class="option__name">autoControlsCombine</div>
-                <div class="option__options">boolean (true / false)</div>
+                <div class="option__options">boolean</div>
               </td>
               <td>false</td>
               <td>When slideshow is playing only "Stop" control is displayed and vice-versa</td>
@@ -406,10 +406,198 @@
             <tr>
               <td>
                 <div class="option__name">keyboardEnabled</div>
-                <div class="option__options">boolean (true / false)</div>
+                <div class="option__options">boolean</div>
               </td>
               <td>false</td>
               <td>Enable keyboard navigation for visible sliders</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="option-group">
+      <h2>Auto</h2>
+
+      <table cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Default</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>
+                <div class="option__name">auto</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>false</td>
+              <td>Slides will automatically transition</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">stopAutoOnClick</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>false</td>
+              <td>Auto will stop on interaction with controls</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">pause</div>
+                <div class="option__options">integer</div>
+              </td>
+              <td>4000</td>
+              <td>The amount of time (in ms) between each auto transition</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">autoStart</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>true</td>
+              <td>Auto show starts playing on load. If false, slideshow will start when the "Start" control is clicked</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">autoDirection</div>
+                <div class="option__options">&#x27;next&#x27;, &#x27;prev&#x27;</div>
+              </td>
+              <td>&#x27;next&#x27;</td>
+              <td>The direction of auto show slide transitions</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">autoHover</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>false</td>
+              <td>Auto show will pause when mouse hovers over slider</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">autoDelay</div>
+                <div class="option__options">integer</div>
+              </td>
+              <td>0</td>
+              <td>Time (in ms) auto show should wait before starting</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="option-group">
+      <h2>Carousel</h2>
+
+      <table cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Default</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>
+                <div class="option__name">minSlides</div>
+                <div class="option__options">integer</div>
+              </td>
+              <td>1</td>
+              <td>The minimum number of slides to be shown. Slides will be sized down if carousel becomes smaller than the original size.</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">maxSlides</div>
+                <div class="option__options">integer</div>
+              </td>
+              <td>1</td>
+              <td>The maximum number of slides to be shown. Slides will be sized up if carousel becomes larger than the original size.</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">moveSlides</div>
+                <div class="option__options">integer</div>
+              </td>
+              <td>0</td>
+              <td>The number of slides to move on transition. This value must be &gt;= minSlides, and &lt;= maxSlides. If zero (default), the number of fully-visible slides will be used.</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">slideWidth</div>
+                <div class="option__options">integer</div>
+              </td>
+              <td>0</td>
+              <td>The width of each slide. This setting is required for all horizontal carousels!</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">shrinkItems</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>false</td>
+              <td>The Carousel will only show whole items and shrink the images to fit the viewport based on maxSlides / minSlides.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="option-group">
+      <h2>Keyboard</h2>
+
+      <table cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Default</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>
+                <div class="option__name">keyboardEnabled</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>false</td>
+              <td>Allows for keyboard control of visible slider. Keypress ignored if slider not visible.</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="option-group">
+      <h2>Accessibility</h2>
+
+      <table cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Default</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>
+                <div class="option__name">ariaLive</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>true</td>
+              <td>Adds Aria Live attribute to slider.</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="option__name">ariaHidden</div>
+                <div class="option__options">boolean</div>
+              </td>
+              <td>true</td>
+              <td>Adds Aria Hidden attribute to any nonvisible slides.</td>
             </tr>
         </tbody>
       </table>

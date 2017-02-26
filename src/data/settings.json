@@ -225,7 +225,7 @@
           "name": "controls",
           "description": "If true, \"Next\" / \"Prev\" controls will be added",
           "default": "true",
-          "options": "boolean (true / false)"
+          "options": "boolean"
         },
 
         {
@@ -260,7 +260,7 @@
           "name": "autoControls",
           "description": "If true, \"Start\" / \"Stop\" controls will be added",
           "default": "false",
-          "options": "boolean (true / false)"
+          "options": "boolean"
         },
 
         {
@@ -281,7 +281,7 @@
           "name": "autoControlsCombine",
           "description": "When slideshow is playing only \"Stop\" control is displayed and vice-versa",
           "default": "false",
-          "options": "boolean (true / false)"
+          "options": "boolean"
         },
 
         {
@@ -295,7 +295,127 @@
           "name": "keyboardEnabled",
           "description": "Enable keyboard navigation for visible sliders",
           "default": "false",
-          "options": "boolean (true / false)"
+          "options": "boolean"
+        }
+      ]
+    },
+    {
+      "group": "Auto",
+      "items": [
+        {
+          "name": "auto",
+          "description": "Slides will automatically transition",
+          "default": "false",
+          "options": "boolean"
+        },
+        {
+          "name": "stopAutoOnClick",
+          "description": "Auto will stop on interaction with controls",
+          "default": "false",
+          "options": "boolean"
+        },
+
+        {
+          "name": "pause",
+          "description": "The amount of time (in ms) between each auto transition",
+          "default": "4000",
+          "options": "integer"
+        },
+
+        {
+          "name": "autoStart",
+          "description": "Auto show starts playing on load. If false, slideshow will start when the \"Start\" control is clicked",
+          "default": "true",
+          "options": "boolean"
+        },
+
+        {
+          "name": "autoDirection",
+          "description": "The direction of auto show slide transitions",
+          "default": "'next'",
+          "options": "'next', 'prev'"
+        },
+
+        {
+          "name": "autoHover",
+          "description": "Auto show will pause when mouse hovers over slider",
+          "default": "false",
+          "options": "boolean"
+        },
+
+        {
+          "name": "autoDelay",
+          "description": "Time (in ms) auto show should wait before starting",
+          "default": "0",
+          "options": "integer"
+        }
+      ]
+    },
+    {
+      "group": "Carousel",
+      "items": [
+        {
+          "name": "minSlides",
+          "description": "The minimum number of slides to be shown. Slides will be sized down if carousel becomes smaller than the original size.",
+          "default": "1",
+          "options": "integer"
+        },
+
+        {
+          "name": "maxSlides",
+          "description": "The maximum number of slides to be shown. Slides will be sized up if carousel becomes larger than the original size.",
+          "default": "1",
+          "options": "integer"
+        },
+
+        {
+          "name": "moveSlides",
+          "description": "The number of slides to move on transition. This value must be &gt;= minSlides, and &lt;= maxSlides. If zero (default), the number of fully-visible slides will be used.",
+          "default": "0",
+          "options": "integer"
+        },
+
+        {
+          "name": "slideWidth",
+          "description": "The width of each slide. This setting is required for all horizontal carousels!",
+          "default": "0",
+          "options": "integer"
+        },
+
+        {
+          "name": "shrinkItems",
+          "description": "The Carousel will only show whole items and shrink the images to fit the viewport based on maxSlides / minSlides.",
+          "default": "false",
+          "options": "boolean"
+        }
+      ]
+    },
+    {
+      "group": "Keyboard",
+      "items": [
+        {
+          "name": "keyboardEnabled",
+          "description": "Allows for keyboard control of visible slider. Keypress ignored if slider not visible.",
+          "default": "false",
+          "options": "boolean"
+        }
+      ]
+    },
+    {
+      "group": "Accessibility",
+      "items": [
+        {
+          "name": "ariaLive",
+          "description": "Adds Aria Live attribute to slider.",
+          "default": "true",
+          "options": "boolean"
+        },
+
+        {
+          "name": "ariaHidden",
+          "description": "Adds Aria Hidden attribute to any nonvisible slides.",
+          "default": "true",
+          "options": "boolean"
         }
       ]
     }
