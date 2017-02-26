@@ -520,6 +520,60 @@
           ]
         }
       ]
+    },
+    {
+      "group": "Public Methods",
+      "items": [
+        {
+          "name": "goToSlide",
+          "description": "Performs a slide transition to the supplied slide index (zero-based)"
+        },
+
+        {
+          "name": "goToNextSlide",
+          "description": "Performs a \"Next\" slide transition"
+        },
+
+        {
+          "name": "goToPrevSlide",
+          "description": "Performs a \"Prev\" slide transition"
+        },
+
+        {
+          "name": "startAuto",
+          "description": "Starts the auto show. Provide an argument false to prevent the auto controls from being updated."
+        },
+
+        {
+          "name": "stopAuto",
+          "description": "Stops the auto show. Provide an argument false to prevent the auto controls from being updated."
+        },
+
+        {
+          "name": "getCurrentSlide",
+          "description": "Returns the current active slide"
+        },
+
+        {
+          "name": "getSlideCount",
+          "description": "Returns the total number of slides in the slider"
+        },
+
+        {
+          "name": "redrawSlider",
+          "description": "Redraw the slider. Useful when needing to redraw a hidden slider after it is unhidden."
+        },
+
+        {
+          "name": "reloadSlider",
+          "description": "Reload the slider. Useful when adding slides on the fly. Accepts an optional settings object."
+        },
+
+        {
+          "name": "destroySlider",
+          "description": "Destroy the slider. This reverts all slider elements back to their original state (before calling the slider)."
+        }
+      ]
     }
   ]
 }

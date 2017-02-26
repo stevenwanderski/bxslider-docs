@@ -7,6 +7,8 @@
 
     {{#if (eq group "Callbacks")}}
       {{> partials/option-group-with-arguments group=group items=items}}
+    {{else if (eq group "Public Methods")}}
+      {{> partials/option-group-with-name-description group=group items=items}}
     {{else}}
       {{> partials/option-group-with-default group=group items=items}}
     {{/if}}

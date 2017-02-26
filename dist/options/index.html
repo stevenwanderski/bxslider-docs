@@ -244,7 +244,7 @@
           </tbody>
         </table>
       </div>
-
+    
 
       <div class="option-group">
         <h2>Pager</h2>
@@ -309,7 +309,7 @@
           </tbody>
         </table>
       </div>
-
+    
 
       <div class="option-group">
         <h2>Controls</h2>
@@ -414,7 +414,7 @@
           </tbody>
         </table>
       </div>
-
+    
 
       <div class="option-group">
         <h2>Auto</h2>
@@ -487,7 +487,7 @@
           </tbody>
         </table>
       </div>
-
+    
 
       <div class="option-group">
         <h2>Carousel</h2>
@@ -544,7 +544,7 @@
           </tbody>
         </table>
       </div>
-
+    
 
       <div class="option-group">
         <h2>Keyboard</h2>
@@ -569,7 +569,7 @@
           </tbody>
         </table>
       </div>
-
+    
 
       <div class="option-group">
         <h2>Accessibility</h2>
@@ -602,7 +602,7 @@
           </tbody>
         </table>
       </div>
-
+    
 
       <div class="option-group">
         <h2>Callbacks</h2>
@@ -719,6 +719,82 @@
                     </div>
                 </td>
                 <td>Executes immediately before each "Prev" slide transition. Function argument is the target (prev) slide element.</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="option-group">
+        <h2>Public Methods</h2>
+      
+        <table cellspacing="0" cellpadding="0">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td>
+                  <div class="option__name">goToSlide</div>
+                </td>
+                <td>Performs a slide transition to the supplied slide index (zero-based)</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="option__name">goToNextSlide</div>
+                </td>
+                <td>Performs a "Next" slide transition</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="option__name">goToPrevSlide</div>
+                </td>
+                <td>Performs a "Prev" slide transition</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="option__name">startAuto</div>
+                </td>
+                <td>Starts the auto show. Provide an argument false to prevent the auto controls from being updated.</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="option__name">stopAuto</div>
+                </td>
+                <td>Stops the auto show. Provide an argument false to prevent the auto controls from being updated.</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="option__name">getCurrentSlide</div>
+                </td>
+                <td>Returns the current active slide</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="option__name">getSlideCount</div>
+                </td>
+                <td>Returns the total number of slides in the slider</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="option__name">redrawSlider</div>
+                </td>
+                <td>Redraw the slider. Useful when needing to redraw a hidden slider after it is unhidden.</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="option__name">reloadSlider</div>
+                </td>
+                <td>Reload the slider. Useful when adding slides on the fly. Accepts an optional settings object.</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="option__name">destroySlider</div>
+                </td>
+                <td>Destroy the slider. This reverts all slider elements back to their original state (before calling the slider).</td>
               </tr>
           </tbody>
         </table>
