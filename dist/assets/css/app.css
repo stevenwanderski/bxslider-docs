@@ -153,6 +153,9 @@ code {
 .option__options {
   font-style: italic; }
 
+.option__argument {
+  margin-bottom: 10px; }
+
 .option-group {
   margin-bottom: 60px; }
 

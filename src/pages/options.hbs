@@ -5,31 +5,11 @@
 
   {{#each settings.options}}
 
-    <div class="option-group">
-      <h2>{{group}}</h2>
-
-      <table cellspacing=0 cellpadding=0>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Default</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{#each items}}
-            <tr>
-              <td>
-                <div class="option__name">{{name}}</div>
-                <div class="option__options">{{options}}</div>
-              </td>
-              <td>{{default}}</td>
-              <td>{{{description}}}</td>
-            </tr>
-          {{/each}}
-        </tbody>
-      </table>
-    </div>
+    {{#if (eq group "Callbacks")}}
+      {{> partials/option-group-with-arguments group=group items=items}}
+    {{else}}
+      {{> partials/option-group-with-default group=group items=items}}
+    {{/if}}
 
   {{/each}}
 

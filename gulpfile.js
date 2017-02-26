@@ -14,7 +14,8 @@ gulp.task('compile-templates', function() {
     }))
     .pipe(hb({
       partials: './src/{partials,layouts}/**/*.hbs',
-      data: './src/data/settings.json'
+      data: './src/data/settings.json',
+      helpers: './src/helpers/*.js'
     }))
     .pipe(highlight())
     .pipe(rename(function (path) {

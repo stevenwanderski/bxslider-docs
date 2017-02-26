@@ -1,0 +1,31 @@
+<div class="option-group">
+  <h2>{{group}}</h2>
+
+  <table cellspacing=0 cellpadding=0>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Arguments</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each items}}
+        <tr>
+          <td>
+            <div class="option__name">{{name}}</div>
+          </td>
+          <td>
+            {{#each arguments}}
+              <div class="option__argument">
+                <div class="option__name">{{name}}:</div>
+                {{description}}
+              </div>
+            {{/each}}
+          </td>
+          <td>{{{description}}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
