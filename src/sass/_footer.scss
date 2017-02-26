@@ -1,3 +1,31 @@
 .footer {
-  padding: 20px;
+  background: $dark-gray;
+  font-size: 14px;
+  color: $white;
+
+  &__inner {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  &__column-row:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $break-main) {
+      display: block;
+    }
+  }
+
+  &__column {
+    @media (max-width: $break-main) {
+      margin-bottom: 60px;
+    }
+  }
 }
