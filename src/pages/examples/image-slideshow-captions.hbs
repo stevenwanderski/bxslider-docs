@@ -1,10 +1,10 @@
 ---
 html: |
-  <ul class="bxslider">
-    <li><img src="/assets/images/unsplash.jpg" title="Funky roots" /></li>
-    <li><img src="/assets/images/unsplash-1.jpg" title="The long and winding road" /></li>
-    <li><img src="/assets/images/unsplash-2.jpg" title="Happy trees" /></li>
-  </ul>
+  <div class="bxslider">
+    <div><img src="/assets/images/coffee1.jpg" title="Funky roots" /></div>
+    <div><img src="/assets/images/coffee2.jpg" title="The long and winding road" /></div>
+    <div><img src="/assets/images/coffee3.jpg" title="Happy trees" /></div>
+  </div>
 
 js: |
   $(function(){
@@ -17,29 +17,14 @@ js: |
 ---
 
 {{#> layouts/base}}
-
 {{#*inline "content"}}
 
-<h1>Image gallery with captions</h1>
-
-<div class="example__slider">
-  {{{page.html}}}
-</div>
-
-<script>
-  {{{page.js}}}
-</script>
-
-<div class="example__code-block">
-  <div class="example__code-header">JS:</div>
-  <pre class="example__code-body"><code class="javascript">{{{page.js}}}</code></pre>
-</div>
-
-<div class="example__code-block">
-  <div class="example__code-header">HTML:</div>
-  <pre class="example__code-body"><code class="html">{{{page.html}}}</code></pre>
-</div>
+{{>
+  partials/example-body
+  title=page.title
+  html=page.html
+  js=page.js
+}}
 
 {{/inline}}
-
 {{/layouts/base}}

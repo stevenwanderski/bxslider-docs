@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <head>
   <title>jQuery Content Slider | Responsive jQuery Slider | bxSlider</title>
@@ -35,7 +36,51 @@
 
   <main>
     <div class="content">
-        Hey peoples!!
+      
+<h1>Auto show with start / stop controls</h1>
+
+<div class="example__slider">
+  <div class="bxslider">
+  <div><img src="/assets/images/coffee1.jpg"></div>
+  <div><img src="/assets/images/coffee2.jpg"></div>
+  <div><img src="/assets/images/coffee3.jpg"></div>
+</div>
+
+</div>
+
+<script>
+  $('.bxslider').bxSlider({
+  auto: true,
+  autoControls: true,
+  stopAutoOnClick: true,
+  pager: true,
+  slideWidth: 400
+});
+
+</script>
+
+<div class="example__code-block">
+  <div class="example__code-header">JS:</div>
+  <pre class="example__code-body"><code class="javascript hljs">$(<span class="hljs-string">'.bxslider'</span>).bxSlider({
+<span class="hljs-attr">  auto:</span> <span class="hljs-literal">true</span>,
+<span class="hljs-attr">  autoControls:</span> <span class="hljs-literal">true</span>,
+<span class="hljs-attr">  stopAutoOnClick:</span> <span class="hljs-literal">true</span>,
+<span class="hljs-attr">  pager:</span> <span class="hljs-literal">true</span>,
+<span class="hljs-attr">  slideWidth:</span> <span class="hljs-number">400</span>
+});
+</code></pre>
+</div>
+
+<div class="example__code-block">
+  <div class="example__code-header">HTML:</div>
+  <pre class="example__code-body"><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bxslider"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/assets/images/coffee1.jpg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/assets/images/coffee2.jpg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/assets/images/coffee3.jpg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+</div>
+
 
     </div>
 

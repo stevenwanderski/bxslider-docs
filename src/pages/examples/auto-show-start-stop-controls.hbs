@@ -1,0 +1,31 @@
+---
+title: Auto show with start / stop controls
+html: |
+  <div class="bxslider">
+    <div><img src="/assets/images/coffee1.jpg" /></div>
+    <div><img src="/assets/images/coffee2.jpg" /></div>
+    <div><img src="/assets/images/coffee3.jpg" /></div>
+  </div>
+
+js: |
+  $('.bxslider').bxSlider({
+    auto: true,
+    autoControls: true,
+    stopAutoOnClick: true,
+    pager: true,
+    slideWidth: 400
+  });
+---
+
+{{#> layouts/base}}
+{{#*inline "content"}}
+
+{{>
+  partials/example-body
+  title=page.title
+  html=page.html
+  js=page.js
+}}
+
+{{/inline}}
+{{/layouts/base}}
