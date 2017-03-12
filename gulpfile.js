@@ -3,6 +3,7 @@ var rename = require('gulp-rename');
 var hb = require('gulp-hb');
 var frontMatter = require('gulp-front-matter');
 var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 var highlight = require('gulp-highlight');
 var browserSync = require('browser-sync').create();
 
@@ -43,7 +44,9 @@ gulp.task('scripts', function() {
 
 gulp.task('sass', function () {
   return gulp.src('./src/sass/**/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./dist/assets/css'))
     .pipe(browserSync.stream());
 });
@@ -54,8 +57,12 @@ gulp.task('browser-sync', function() {
       baseDir: './dist'
     },
     notify: false,
-    open: false
+    open: false,
+    ghostMode: false
   });
+
+  // gulp.watch('./dist/*.html').on("change", browserSync.reload);
+  // gulp.watch('./dist/**/*.html').on("change", browserSync.reload);
 });
 
 gulp.task('watch', function() {
@@ -63,7 +70,7 @@ gulp.task('watch', function() {
   gulp.watch('./src/images/*', ['images']);
   gulp.watch('./src/sass/**/*', ['sass']);
   gulp.watch('./src/js/**/*', ['scripts']);
-  gulp.watch('./dist/**/*.html').on('change', browserSync.reload);
+  // gulp.watch('./dist/**/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', [

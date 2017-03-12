@@ -1,5 +1,31 @@
 ---
 title: Auto show with start / stop controls
+
+fullHtml: |
+  <html>
+  <head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.slider').bxSlider();
+      });
+    </script>
+
+  </head>
+  <body>
+
+    <div class="slider">
+      <div>I am a slide.</div>
+      <div>I am another slide.</div>
+    </div>
+
+  </body>
+  </html>
+
 cdn: |
   // Links to the libraries needed
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -43,6 +69,28 @@ js: |
   <h1>Install</h1>
 
   <div class="install__block">
+    <p><span class="emoji">✨</span> Click the magical orbs to learn about each section.</p>
+    <div class="tour">
+      <pre><code class="html">{{{page.fullHtml}}}</code></pre>
+
+      <div class="tour__step tour__step--one">
+        <div class="tour__step-title">1</div>
+        <div class="tour__step-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aliquid possimus dolor, ab quo earum tenetur libero voluptatem quaerat dolorum natus eveniet modi necessitatibus itaque, dolorem repellat tempore! Pariatur, placeat.</div>
+      </div>
+
+      <div class="tour__step tour__step--two">
+        <div class="tour__step-title">2</div>
+        <div class="tour__step-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aliquid possimus dolor, ab quo earum tenetur libero voluptatem quaerat dolorum natus eveniet modi necessitatibus itaque, dolorem repellat tempore! Pariatur, placeat.</div>
+      </div>
+
+      <div class="tour__step tour__step--three">
+        <div class="tour__step-title">3</div>
+        <div class="tour__step-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aliquid possimus dolor, ab quo earum tenetur libero voluptatem quaerat dolorum natus eveniet modi necessitatibus itaque, dolorem repellat tempore! Pariatur, placeat.</div>
+      </div>
+    </div>
+  </div>
+
+  {{!-- <div class="install__block">
     <div class="install__header">🤗 The Easy Way</div>
 
     <div class="install__method">
@@ -90,7 +138,7 @@ js: |
         <p>2. Include in your webpage</p>
         <pre><code class="html">{{{page.npm}}}{{{page.js}}}</code></pre>
       </div>
-    </div>
+    </div> --}}
 
   </div>
 

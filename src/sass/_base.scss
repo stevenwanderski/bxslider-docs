@@ -59,10 +59,24 @@ code,
 .hljs {
   font-family: 'Overpass Mono';
   padding: 14px 20px;
+  background: $light-gray;
 }
+
+// .hljs-tag, .hljs-name, .hljs-selector-id, .hljs-selector-class {
+//   color: $dark-gray;
+// }
+//
+// .hljs-strong, .hljs-string, .hljs-deletion {
+//   color: $primary;
+// }
 
 .ad {
   width: 300px;
-  height: 250px;
+  height: 150px;
   background: $light-gray;
+}
+
+.emoji {
+  font-size: 24px;
+  vertical-align: text-top;
 }
