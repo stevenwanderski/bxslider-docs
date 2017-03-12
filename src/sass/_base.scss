@@ -21,8 +21,15 @@ main {
 }
 
 h1 {
-  margin-bottom: 40px;
-  margin-top: 0;
+  margin: 0 0 40px;
+}
+
+h2 {
+  margin: 0 0 6px;
+}
+
+h3 {
+  margin: 0 0 20px;
 }
 
 a {
@@ -37,6 +44,7 @@ a {
 p {
   font-size: 17px;
   line-height: 28px;
+  margin: 0 0 16px;
 }
 
 pre {
@@ -47,8 +55,10 @@ pre {
   min-width: 0;
 }
 
-code {
+code,
+.hljs {
   font-family: 'Overpass Mono';
+  padding: 14px 20px;
 }
 
 .ad {

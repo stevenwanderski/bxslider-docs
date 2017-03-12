@@ -53,7 +53,8 @@ gulp.task('browser-sync', function() {
     server: {
       baseDir: './dist'
     },
-    notify: false
+    notify: false,
+    open: false
   });
 });
 

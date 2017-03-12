@@ -1,0 +1,99 @@
+---
+title: Auto show with start / stop controls
+cdn: |
+  // Links to the libraries needed
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+bower: |
+  // Links to the libraries needed
+  <link rel="stylesheet" href="/bower_components/bxslider/dist/jquery.bxslider.css">
+  <script src="/bower_components/bxslider/dist/jquery.bxslider.min.js"></script>
+
+npm: |
+  // Links to the libraries needed
+  <link rel="stylesheet" href="/node_modules/bxslider/dist/jquery.bxslider.css">
+  <script src="/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
+
+manual: |
+  // Links to the libraries needed
+  <link rel="stylesheet" href="/path/to/jquery.bxslider.css">
+  <script src="/path/to/jquery.bxslider.min.js"></script>
+
+js: |
+
+  // Initialize the slider
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+  </script>
+
+  // Slider HTML (change this to your own!)
+  <div class="slider">
+    <div>I am a slide.</div>
+    <div>I am another slide.</div>
+  </div>
+---
+
+{{#> layouts/base}}
+
+{{#*inline "content"}}
+  <h1>Install</h1>
+
+  <div class="install__block">
+    <div class="install__header">🤗 The Easy Way</div>
+
+    <div class="install__method">
+      <p>Plop this code anywhere in your webpage</p>
+      <pre><code class="html">{{{page.cdn}}}{{{page.js}}}</code></pre>
+    </div>
+  </div>
+
+  <div class="install__block">
+    <div class="install__header">🤔 The Other Ways</div>
+
+    <div class="install__method">
+      <h3>Manual</h3>
+      <div class="install__method-block">
+        <p>1. <a href="">Download jquery.bxslider.zip here</a></p>
+      </div>
+
+      <div class="install__method-block">
+        <p>2. Include in your webpage</p>
+        <pre><code class="html">{{{page.manual}}}{{{page.js}}}</code></pre>
+      </div>
+    </div>
+
+    <div class="install__method">
+      <h3>Bower</h3>
+      <div class="install__method-block">
+        <p>1. Run from a command line</p>
+        <pre><code class="bash">bower install bxslider --save</code></pre>
+      </div>
+
+      <div class="install__method-block">
+        <p>2. Include in your webpage</p>
+        <pre><code class="html">{{{page.bower}}}{{{page.js}}}</code></pre>
+      </div>
+    </div>
+
+    <div class="install__method">
+      <h3>NPM</h3>
+      <div class="install__method-block">
+        <p>1. Run from a command line</p>
+        <pre><code class="bash">npm install bxslider --save</code></pre>
+      </div>
+
+      <div class="install__method-block">
+        <p>2. Include in your webpage</p>
+        <pre><code class="html">{{{page.npm}}}{{{page.js}}}</code></pre>
+      </div>
+    </div>
+
+  </div>
+
+{{/inline}}
+
+{{/layouts/base}}

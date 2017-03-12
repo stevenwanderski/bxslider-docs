@@ -17,8 +17,13 @@ main {
       display: block; } }
 
 h1 {
-  margin-bottom: 40px;
-  margin-top: 0; }
+  margin: 0 0 40px; }
+
+h2 {
+  margin: 0 0 6px; }
+
+h3 {
+  margin: 0 0 20px; }
 
 a {
   color: #FF1654;
@@ -28,7 +33,8 @@ a {
 
 p {
   font-size: 17px;
-  line-height: 28px; }
+  line-height: 28px;
+  margin: 0 0 16px; }
 
 pre {
   font-size: 16px;
@@ -37,8 +43,10 @@ pre {
   margin: 0;
   min-width: 0; }
 
-code {
-  font-family: 'Overpass Mono'; }
+code,
+.hljs {
+  font-family: 'Overpass Mono';
+  padding: 14px 20px; }
 
 .ad {
   width: 300px;
@@ -125,8 +133,8 @@ code {
         padding: 10px 0;
         font-size: 20px; } }
   .nav__button {
-    display: none;
-    margin-left: 14px; }
+    margin-left: 14px;
+    padding: 10px 20px; }
     @media (max-width: 800px) {
       .nav__button {
         margin-left: 0; } }
@@ -139,6 +147,9 @@ code {
     .content {
       margin-right: 0;
       margin-bottom: 40px; } }
+
+.example__code {
+  margin-bottom: 80px; }
 
 .example__code-block {
   margin-bottom: 25px; }
@@ -215,3 +226,25 @@ td {
   .personal__info {
     font-size: 18px;
     margin-bottom: 40px; }
+
+.install__block {
+  margin-bottom: 80px; }
+
+.install__header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px; }
+
+.install__method {
+  padding: 25px;
+  background: #f9f9f9;
+  margin-bottom: 60px; }
+  .install__method pre {
+    border: 0;
+    padding: 0; }
+
+.install__method-block {
+  margin-bottom: 26px; }
+
+.bash .hljs-keyword {
+  color: #abb2bf; }

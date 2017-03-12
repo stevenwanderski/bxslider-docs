@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<head>
+  <title>jQuery Content Slider | Responsive jQuery Slider | bxSlider</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="keywords" content="content slider, responsive image gallery, responsive image gallery, image slider, image fade, image rotator">
+  <meta name="description" content="Respsonsive jQuery content slider.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="/assets/images/hex2.png">
+  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.9.0/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="/">
+          <strong>bx</strong>Slider
+        </a>
+      </div>
+      <nav class="nav">
+        <a href="/examples" class="nav__link">Examples</a>
+        <a href="/options" class="nav__link">Options</a>
+        <a href="https://github.com/stevenwanderski/bxslider-4" class="nav__link" target="_blank">Github</a>
+        <a href="/install" class="nav__link nav__button button">Install</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="content">
+        <h1>Install</h1>
+
+  <div class="install__block">
+    <div class="install__header">🤗 The Easy Way</div>
+
+    <div class="install__method">
+      <p>Plop this code anywhere in your webpage</p>
+      <pre><code class="html hljs">// Links to the libraries needed
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+// Initialize the slider
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    $(<span class="hljs-string">'.slider'</span>).bxSlider();
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+// Slider HTML (change this to your own!)
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>I am a slide.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>I am another slide.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+    </div>
+  </div>
+
+  <div class="install__block">
+    <div class="install__header">🤔 The Other Ways</div>
+
+    <div class="install__method">
+      <h3>Manual</h3>
+      <div class="install__method-block">
+        <p>1. <a href="">Download jquery.bxslider.zip here</a></p>
+      </div>
+
+      <div class="install__method-block">
+        <p>2. Include in your webpage</p>
+        <pre><code class="html hljs">// Links to the libraries needed
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/path/to/jquery.bxslider.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/path/to/jquery.bxslider.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+// Initialize the slider
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    $(<span class="hljs-string">'.slider'</span>).bxSlider();
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+// Slider HTML (change this to your own!)
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>I am a slide.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>I am another slide.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+      </div>
+    </div>
+
+    <div class="install__method">
+      <h3>Bower</h3>
+      <div class="install__method-block">
+        <p>1. Run from a command line</p>
+        <pre><code class="bash hljs"><span class="hljs-keyword">bower </span><span class="hljs-keyword">install </span><span class="hljs-keyword">bxslider </span>--save</code></pre>
+      </div>
+
+      <div class="install__method-block">
+        <p>2. Include in your webpage</p>
+        <pre><code class="html hljs">// Links to the libraries needed
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/bower_components/bxslider/dist/jquery.bxslider.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/bower_components/bxslider/dist/jquery.bxslider.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+// Initialize the slider
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    $(<span class="hljs-string">'.slider'</span>).bxSlider();
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+// Slider HTML (change this to your own!)
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>I am a slide.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>I am another slide.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+      </div>
+    </div>
+
+    <div class="install__method">
+      <h3>NPM</h3>
+      <div class="install__method-block">
+        <p>1. Run from a command line</p>
+        <pre><code class="bash hljs">npm <span class="hljs-keyword">install </span><span class="hljs-keyword">bxslider </span>--save</code></pre>
+      </div>
+
+      <div class="install__method-block">
+        <p>2. Include in your webpage</p>
+        <pre><code class="html hljs">// Links to the libraries needed
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/node_modules/bxslider/dist/jquery.bxslider.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/node_modules/bxslider/dist/jquery.bxslider.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+// Initialize the slider
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    $(<span class="hljs-string">'.slider'</span>).bxSlider();
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+// Slider HTML (change this to your own!)
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>I am a slide.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>I am another slide.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+      </div>
+    </div>
+
+  </div>
+
+
+    </div>
+
+    <aside class="sidebar">
+      <div class="sidebar__block">
+        <div class="ad"></div>
+      </div>
+
+      <div class="sidebar__block">
+        <a href="https://paypal.com" class="button button--inverse button--full-width">
+          Donate
+        </a>
+      </div>
+    </aside>
+  </main>
+
+  <div class="personal">
+    <div class="personal__inner">
+      <div class="personal__row">
+        Coded with &hearts; by
+      </div>
+  
+      <div class="personal__row personal__info">
+        Steven Wanderski <a href="http://stevenwanderski.com" target="_blank">Chicago Web Developer</a>
+      </div>
+  
+      <div class="personal__row">
+        <a class="github-button" href="https://github.com/stevenwanderski/bxslider-4" data-style="mega" data-count-href="/stevenwanderski/bxslider-4/stargazers" data-count-api="/repos/stevenwanderski/bxslider-4#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star stevenwanderski/bxslider-4 on GitHub">Star</a>
+      </div>
+  
+      <div class="personal__row">
+        <a href="https://twitter.com/stevenwanderski">Twitter</a>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__inner">
+  
+      <div class="footer__columns">
+        <div class="footer__column">
+          <div class="footer__column-row">
+            <a href="http://sliderui.com">Slider Builder</a>
+          </div>
+          <div class="footer__column-row">
+            <a href="http://css3buttongenerator.com">CSS Button Generator</a>
+          </div>
+        </div>
+  
+        <div class="footer__column">
+          Deploy with <a href="https://netlify.com">Netlify</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+

@@ -1,0 +1,26 @@
+.install {
+  &__block {
+    margin-bottom: 80px;
+  }
+
+  &__header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  &__method {
+    padding: 25px;
+    background: $light-gray;
+    margin-bottom: 60px;
+
+    pre {
+      border: 0;
+      padding: 0;
+    }
+  }
+
+  &__method-block {
+    margin-bottom: 26px;
+  }
+}
