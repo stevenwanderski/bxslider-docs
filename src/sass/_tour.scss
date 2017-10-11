@@ -10,9 +10,9 @@
       //   animation: none;
       // }
 
-      .tour__step-body {
-        display: block;
-      }
+      // .tour__step-body {
+      //   display: block;
+      // }
     }
 
     &--one {
@@ -36,7 +36,6 @@
     width: 30px;
     height: 30px;
     border-radius: 30px;
-    // border: solid $white 3px;
     color: $white;
     display: flex;
     justify-content: center;
@@ -56,7 +55,14 @@
     position: relative;
     z-index: 1;
     border-radius: 5px 5px 5px 5px;
+    border: solid 2px $primary;
     display: none;
+    margin-left: 20px;
+    width: 500px;
+
+    p {
+      font-size: 14px;
+    }
   }
 }
 

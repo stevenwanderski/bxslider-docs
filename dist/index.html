@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <head>
   <title>jQuery Content Slider | Responsive jQuery Slider | bxSlider</title>
@@ -8,6 +9,8 @@
 
   <link rel="icon" href="/assets/images/hex2.png">
   <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.9.0/styles/github-gist.min.css">
   <link rel="stylesheet" href="/assets/css/app.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -35,7 +38,32 @@
 
   <main>
     <div class="content">
-        <h1>bxSlider is a simple webpage slider</h1>
+        <div class="home__hero">
+    <h1 class="home__title">Add a slider to any webpage.</h1>
+    <div class="home__cta">
+      <a href="/install" class="button button--large">Click here to install</a>
+    </div>
+  </div>
+
+  <div class="home__slider">
+    <div class="bxslider">
+  <div><img src="/assets/images/coffee1.jpg" title="Funky roots"></div>
+  <div><img src="/assets/images/coffee2.jpg" title="The long and winding road"></div>
+  <div><img src="/assets/images/coffee3.jpg" title="Happy trees"></div>
+</div>
+
+  </div>
+
+  <script>
+    $(function(){
+  $('.bxslider').bxSlider({
+    mode: 'fade',
+    captions: true,
+    slideWidth: 600
+  });
+});
+
+  </script>
 
     </div>
 

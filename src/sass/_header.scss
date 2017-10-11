@@ -15,6 +15,7 @@
   }
 
   &__logo {
+    font-family: $logo-font-family;
     font-weight: 600;
 
     @media (max-width: $break-main) {

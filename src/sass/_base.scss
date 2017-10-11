@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  font-family: 'Overpass Mono';
+  font-family: $primary-font-family;
   color: $gray;
 }
 
@@ -22,6 +22,9 @@ main {
 
 h1 {
   margin: 0 0 40px;
+  font-family: $secondary-font-family;
+  font-weight: bold;
+  font-weight: 900;
 }
 
 h2 {
@@ -45,6 +48,10 @@ p {
   font-size: 17px;
   line-height: 28px;
   margin: 0 0 16px;
+}
+
+li {
+  margin-bottom: 8px;
 }
 
 pre {

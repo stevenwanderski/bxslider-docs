@@ -1,7 +1,39 @@
+---
+title: Image gallery with captions
+html: |
+  <div class="bxslider">
+    <div><img src="/assets/images/coffee1.jpg" title="Funky roots" /></div>
+    <div><img src="/assets/images/coffee2.jpg" title="The long and winding road" /></div>
+    <div><img src="/assets/images/coffee3.jpg" title="Happy trees" /></div>
+  </div>
+
+js: |
+  $(function(){
+    $('.bxslider').bxSlider({
+      mode: 'fade',
+      captions: true,
+      slideWidth: 600
+    });
+  });
+---
+
 {{#> layouts/base}}
 
 {{#*inline "content"}}
-  <h1>bxSlider is a simple webpage slider</h1>
+  <div class="home__hero">
+    <h1 class="home__title">Add a slider to any webpage.</h1>
+    <div class="home__cta">
+      <a href="/install" class="button button--large">Click here to install</a>
+    </div>
+  </div>
+
+  <div class="home__slider">
+    {{{page.html}}}
+  </div>
+
+  <script>
+    {{{page.js}}}
+  </script>
 {{/inline}}
 
 {{/layouts/base}}
