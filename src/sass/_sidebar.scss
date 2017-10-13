@@ -1,7 +1,63 @@
 .sidebar {
   flex: 0 0 300px;
-  
+
   &__block {
     margin-bottom: 30px;
+
+    &--paypal {
+      input[type="image"] {
+        max-width: 75%;
+        text-align: center;
+      }
+
+      form {
+        text-align: center;
+      }
+    }
   }
+}
+
+#carbonads {
+  display: block;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.carbon-wrap {
+  padding: 1em;
+  border: solid 1px #ccc;
+  border-bottom: 0;
+  background-color: $white;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  float: left;
+  margin-right: 1em;
+}
+
+.carbon-img img {
+  display: block;
+}
+
+.carbon-text {
+  display: block;
+  float: left;
+  max-width: calc(100% - 130px - 1em);
+  text-align: left;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: .5em 0;
+  background-color: $gray;
+  color: $white;
+  text-align: center;
+  font-size: 10px;
 }
