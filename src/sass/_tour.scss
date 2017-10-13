@@ -5,16 +5,6 @@
     position: absolute;
     display: flex;
 
-    &:hover {
-      // .tour__step-title {
-      //   animation: none;
-      // }
-
-      // .tour__step-body {
-      //   display: block;
-      // }
-    }
-
     &--one {
       top: 106px;
       left: -4px;
@@ -50,8 +40,7 @@
 
   &__step-body {
     background: $white;
-    padding: 20px 20px 20px 20px;
-    font-size: 14px;
+    padding: 20px;
     position: relative;
     z-index: 1;
     border-radius: 5px 5px 5px 5px;
@@ -61,14 +50,11 @@
     width: 500px;
 
     p {
-      font-size: 14px;
+      font-size: 16px;
+      line-height: 22px;
     }
   }
 }
-
-// .pulse:hover {
-//   animation: none;
-// }
 
 @-webkit-keyframes pulse {
   0% {
