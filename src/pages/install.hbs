@@ -35,16 +35,19 @@ cdn: |
 bower: |
   // Links to the libraries needed
   <link rel="stylesheet" href="/bower_components/bxslider/dist/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="/bower_components/bxslider/dist/jquery.bxslider.min.js"></script>
 
 npm: |
   // Links to the libraries needed
   <link rel="stylesheet" href="/node_modules/bxslider/dist/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="/node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
 
 manual: |
   // Links to the libraries needed
   <link rel="stylesheet" href="/path/to/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="/path/to/jquery.bxslider.min.js"></script>
 
 js: |
@@ -63,12 +66,12 @@ js: |
   </div>
 ---
 
-{{#> layouts/base}}
+{{#> layouts/content-sidebar}}
 
 {{#*inline "content"}}
   <h1>Install</h1>
 
-  <div class="install__block">
+  {{!-- <div class="install__block">
     <p><span class="emoji">✨</span> Click the numbers to learn about each section.</p>
     <div class="tour">
       <pre><code class="html">{{{page.fullHtml}}}</code></pre>
@@ -97,15 +100,46 @@ js: |
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
 
-  {{!-- <div class="install__block">
+  <div class="install__block">
     <div class="install__header">🤗 The Easy Way</div>
 
-    <div class="install__method">
+    <div class="install__block">
+      <p><span class="emoji">✨</span> Click the numbers to learn about each section.</p>
+      <div class="tour">
+        <pre><code class="html">{{{page.fullHtml}}}</code></pre>
+
+        <div class="tour__step tour__step--one">
+          <div class="tour__step-title">1</div>
+          <div class="tour__step-body">
+            <h3>Include the bxSlider files</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aliquid possimus dolor, ab quo earum tenetur libero voluptatem quaerat dolorum natus eveniet modi necessitatibus itaque, dolorem repellat tempore! Pariatur, placeat.</p>
+          </div>
+        </div>
+
+        <div class="tour__step tour__step--two">
+          <div class="tour__step-title">2</div>
+          <div class="tour__step-body">
+            <h3>Initialize the bxSlider plugin</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aliquid possimus dolor, ab quo earum tenetur libero voluptatem quaerat dolorum natus eveniet modi necessitatibus itaque, dolorem repellat tempore! Pariatur, placeat.</p>
+          </div>
+        </div>
+
+        <div class="tour__step tour__step--three">
+          <div class="tour__step-title">3</div>
+          <div class="tour__step-body">
+            <h3>Create the HTML for the slider</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aliquid possimus dolor, ab quo earum tenetur libero voluptatem quaerat dolorum natus eveniet modi necessitatibus itaque, dolorem repellat tempore! Pariatur, placeat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{!-- <div class="install__method">
       <p>Plop this code anywhere in your webpage</p>
       <pre><code class="html">{{{page.cdn}}}{{{page.js}}}</code></pre>
-    </div>
+    </div> --}}
   </div>
 
   <div class="install__block">
@@ -114,7 +148,7 @@ js: |
     <div class="install__method">
       <h3>Manual</h3>
       <div class="install__method-block">
-        <p>1. <a href="">Download jquery.bxslider.zip here</a></p>
+        <p>1. <a href="https://github.com/stevenwanderski/bxslider-4/archive/v4.2.12.zip">Download jquery.bxslider.zip here</a></p>
       </div>
 
       <div class="install__method-block">
@@ -147,10 +181,10 @@ js: |
         <p>2. Include in your webpage</p>
         <pre><code class="html">{{{page.npm}}}{{{page.js}}}</code></pre>
       </div>
-    </div> --}}
+    </div>
 
   </div>
 
 {{/inline}}
 
-{{/layouts/base}}
+{{/layouts/content-sidebar}}

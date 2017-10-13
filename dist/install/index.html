@@ -10,7 +10,7 @@
   <link rel="icon" href="/assets/images/hex2.png">
   <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,900" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.9.0/styles/github-gist.min.css">
   <link rel="stylesheet" href="/assets/css/app.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -35,15 +35,19 @@
       </nav>
     </div>
   </header>
+  
+<main>
+  <div class="content">
+      <h1>Install</h1>
 
-  <main>
-    <div class="content">
-        <h1>Install</h1>
 
   <div class="install__block">
-    <p><span class="emoji">✨</span> Click the numbers to learn about each section.</p>
-    <div class="tour">
-      <pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <div class="install__header">🤗 The Easy Way</div>
+
+    <div class="install__block">
+      <p><span class="emoji">✨</span> Click the numbers to learn about each section.</p>
+      <div class="tour">
+        <pre><code class="html hljs"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
 
   <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"</span>&gt;</span>
@@ -68,50 +72,144 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 
-      <div class="tour__step tour__step--one">
-        <div class="tour__step-title">1</div>
-        <div class="tour__step-body">
-          <h3>Include the bxSlider files</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aliquid possimus dolor, ab quo earum tenetur libero voluptatem quaerat dolorum natus eveniet modi necessitatibus itaque, dolorem repellat tempore! Pariatur, placeat.</p>
+        <div class="tour__step tour__step--one">
+          <div class="tour__step-title">1</div>
+          <div class="tour__step-body">
+            <h3>Include the bxSlider files</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aliquid possimus dolor, ab quo earum tenetur libero voluptatem quaerat dolorum natus eveniet modi necessitatibus itaque, dolorem repellat tempore! Pariatur, placeat.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="tour__step tour__step--two">
-        <div class="tour__step-title">2</div>
-        <div class="tour__step-body">
-          <h3>Initialize the bxSlider plugin</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aliquid possimus dolor, ab quo earum tenetur libero voluptatem quaerat dolorum natus eveniet modi necessitatibus itaque, dolorem repellat tempore! Pariatur, placeat.</p>
+        <div class="tour__step tour__step--two">
+          <div class="tour__step-title">2</div>
+          <div class="tour__step-body">
+            <h3>Initialize the bxSlider plugin</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aliquid possimus dolor, ab quo earum tenetur libero voluptatem quaerat dolorum natus eveniet modi necessitatibus itaque, dolorem repellat tempore! Pariatur, placeat.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="tour__step tour__step--three">
-        <div class="tour__step-title">3</div>
-        <div class="tour__step-body">
-          <h3>Create the HTML for the slider</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aliquid possimus dolor, ab quo earum tenetur libero voluptatem quaerat dolorum natus eveniet modi necessitatibus itaque, dolorem repellat tempore! Pariatur, placeat.</p>
+        <div class="tour__step tour__step--three">
+          <div class="tour__step-title">3</div>
+          <div class="tour__step-body">
+            <h3>Create the HTML for the slider</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aliquid possimus dolor, ab quo earum tenetur libero voluptatem quaerat dolorum natus eveniet modi necessitatibus itaque, dolorem repellat tempore! Pariatur, placeat.</p>
+          </div>
         </div>
       </div>
     </div>
+
+  </div>
+
+  <div class="install__block">
+    <div class="install__header">🤔 The Other Ways</div>
+
+    <div class="install__method">
+      <h3>Manual</h3>
+      <div class="install__method-block">
+        <p>1. <a href="https://github.com/stevenwanderski/bxslider-4/archive/v4.2.12.zip">Download jquery.bxslider.zip here</a></p>
+      </div>
+
+      <div class="install__method-block">
+        <p>2. Include in your webpage</p>
+        <pre><code class="html hljs">// Links to the libraries needed
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/path/to/jquery.bxslider.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/path/to/jquery.bxslider.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+// Initialize the slider
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    $(<span class="hljs-string">'.slider'</span>).bxSlider();
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+// Slider HTML (change this to your own!)
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>I am a slide.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>I am another slide.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+      </div>
+    </div>
+
+    <div class="install__method">
+      <h3>Bower</h3>
+      <div class="install__method-block">
+        <p>1. Run from a command line</p>
+        <pre><code class="bash hljs"><span class="hljs-keyword">bower </span><span class="hljs-keyword">install </span><span class="hljs-keyword">bxslider </span>--save</code></pre>
+      </div>
+
+      <div class="install__method-block">
+        <p>2. Include in your webpage</p>
+        <pre><code class="html hljs">// Links to the libraries needed
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/bower_components/bxslider/dist/jquery.bxslider.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/bower_components/bxslider/dist/jquery.bxslider.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+// Initialize the slider
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    $(<span class="hljs-string">'.slider'</span>).bxSlider();
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+// Slider HTML (change this to your own!)
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>I am a slide.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>I am another slide.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+      </div>
+    </div>
+
+    <div class="install__method">
+      <h3>NPM</h3>
+      <div class="install__method-block">
+        <p>1. Run from a command line</p>
+        <pre><code class="bash hljs">npm <span class="hljs-keyword">install </span><span class="hljs-keyword">bxslider </span>--save</code></pre>
+      </div>
+
+      <div class="install__method-block">
+        <p>2. Include in your webpage</p>
+        <pre><code class="html hljs">// Links to the libraries needed
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/node_modules/bxslider/dist/jquery.bxslider.css"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/node_modules/bxslider/dist/jquery.bxslider.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+// Initialize the slider
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    $(<span class="hljs-string">'.slider'</span>).bxSlider();
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+// Slider HTML (change this to your own!)
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"slider"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>I am a slide.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>I am another slide.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+      </div>
+    </div>
+
   </div>
 
 
   </div>
 
+  <aside class="sidebar">
+    <div class="sidebar__block">
+      <div class="ad"></div>
+    </div>
 
-    
+    <div class="sidebar__block">
+      <a href="https://paypal.com" class="button button--inverse button--full-width">
+        Donate
+      </a>
+    </div>
+  </aside>
+</main>
 
-    <aside class="sidebar">
-      <div class="sidebar__block">
-        <div class="ad"></div>
-      </div>
-
-      <div class="sidebar__block">
-        <a href="https://paypal.com" class="button button--inverse button--full-width">
-          Donate
-        </a>
-      </div>
-    </aside>
-  </main>
 
   <div class="personal">
     <div class="personal__inner">
