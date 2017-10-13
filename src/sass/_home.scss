@@ -1,6 +1,6 @@
 .home {
   &__hero {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     margin-top: 40px;
     text-align: center;
   }
@@ -9,6 +9,11 @@
     font-size: 3.5em;
     text-align: center;
     margin-bottom: 26px;
+  }
+
+  &__ad {
+    width: 300px;
+    margin: 0 auto 40px;
   }
 
   &__slider {
