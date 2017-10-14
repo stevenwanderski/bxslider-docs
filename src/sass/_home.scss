@@ -1,6 +1,6 @@
 .home {
   &__hero {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     margin-top: 40px;
     text-align: center;
   }
@@ -9,11 +9,32 @@
     font-size: 3.5em;
     text-align: center;
     margin-bottom: 26px;
+
+    @media (max-width: $break-main) {
+      font-size: 2.5em;
+    }
+  }
+
+  &__ads {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
   }
 
   &__ad {
     width: 300px;
-    margin: 0 auto 40px;
+    margin-right: 50px;
+
+    @media (max-width: $break-main) {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+
+  &__paypal  {
+    max-width: 200px;
   }
 
   &__slider {

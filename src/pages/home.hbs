@@ -22,13 +22,20 @@ js: |
 {{#*inline "content"}}
   <div class="home__hero">
     <h1 class="home__title">Add a slider to any webpage.</h1>
+    
     <div class="home__cta">
       <a href="/install" class="button button--large">Click here to install</a>
     </div>
   </div>
 
-  <div class="home__ad">
-    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=bxslidercom" id="_carbonads_js"></script>
+  <div class="home__ads">
+    <div class="home__ad">
+      <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=bxslidercom" id="_carbonads_js"></script>
+    </div>
+
+    <div class="home__paypal">
+      {{> partials/paypal-button}}
+    </div>
   </div>
 
   <div class="home__slider">
